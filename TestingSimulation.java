@@ -181,17 +181,17 @@ public class TestingSimulation {
 
         // Prompt the user for the variable "alpha", which represents infection rate.
         System.out.println("================================================================");
-        System.out.println("PLEASE ENTER THE INFECTION RATE ALPHA FROM 0 TO 1: ");
+        System.out.println("PLEASE ENTER THE INFECTION RATE ALPHA FROM 0 TO 0.75: ");
         System.out.println("================================================================");
 
         // Alpha input validation. Alpha must be within range 0 to 1 inclusive.
         do {
             alpha = scnr.nextDouble();
-            if (alpha < 0 || alpha > 1) {
-                System.out.println("Error: Alpha must be between 0 and 1.");
+            if (alpha < 0 || alpha > 0.75) {
+                System.out.println("Error: Alpha must be between 0 and 0.75.");
                 alpha = -1;
             }
-        } while (alpha < 0 || alpha > 1);
+        } while (alpha < 0 || alpha > 0.75);
 
         // Prompt user for the variable "beta", which represents recovery rate.
         System.out.println("===============================================================");
